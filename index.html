@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./images/logo@2x.png" />
+</head>
+<body class="light-mode">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="text-center flex-grow-1 text-white text-shadow">🌤️ Weather Forecast</h2>
+      <button id="toggleTheme" class="btn btn-outline-light" aria-label="Toggle dark/light mode">🌓</button>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-8 offset-md-2">
+        <div class="input-group search-bar">
+          <input type="text" id="cityInput" class="form-control" placeholder="Enter city (e.g. Cairo)" aria-label="City name">
+          <button class="btn btn-primary" onclick="searchCity()" aria-label="Search by city">
+            <i class="fas fa-search me-1"></i> Search
+          </button>
+          <button class="btn btn-outline-secondary" onclick="getCurrentLocation()" aria-label="Use current location">📍</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="status" class="text-center fw-bold mb-4 text-white text-shadow">🌍 Waiting for input...</div>
+    <div id="forecastContainer" class="col-md-8 offset-md-2"></div>
+  </div>
+
+  <script defer src="./js/bootstrap.bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+</body>
+</html>
