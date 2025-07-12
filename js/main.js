@@ -5,13 +5,13 @@ const forecastContainer = document.getElementById("forecastContainer");
 const themeBtn = document.getElementById("toggleTheme");
 
 themeBtn.addEventListener("click", () => {
+  const isDark = body.classList.contains("dark-mode");
   body.classList.toggle("dark-mode");
   body.classList.toggle("light-mode");
-  const isDark = body.classList.contains("dark-mode");
 
   body.style.backgroundImage = isDark
-    ? "url('../images/gettyimages-1419901047-640x640.jpg')"
-    : "url('../images/pexels-pixabay-209831.jpg')";
+    ? "url('../images/pexels-pixabay-209831.jpg')"
+    : "url('../images/gettyimages-1419901047-640x640.jpg')";
 
   themeBtn.textContent = isDark ? "🌓" : "🌞";
 });
