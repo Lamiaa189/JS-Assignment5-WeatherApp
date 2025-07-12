@@ -10,8 +10,8 @@ themeBtn.addEventListener("click", () => {
   body.classList.toggle("light-mode");
 
   body.style.backgroundImage = isDark
-    ? "url('../images/pexels-pixabay-209831.jpg')"
-    : "url('../images/gettyimages-1419901047-640x640.jpg')";
+    ? "url('./images/pexels-pixabay-209831.jpg')"
+    : "url('./images/gettyimages-1419901047-640x640.jpg')";
 
   themeBtn.textContent = isDark ? "🌓" : "🌞";
 });
