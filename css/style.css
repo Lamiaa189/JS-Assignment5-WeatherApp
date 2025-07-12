@@ -1,7 +1,7 @@
 body {
   min-height: 100vh;
   margin: 0;
-  background-image: url('/images///pexels-pixabay-209831.jpg');
+  background-image: url("../images/pexels-pixabay-209831.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
